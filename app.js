@@ -3,12 +3,12 @@ var express = require('express'),
 var path = require('path');
 var routes  = require( "./routes" );
 
-// app.use ***********************************
+//***** app.use ***********************************
 app.use(express.static(path.join(__dirname + "/public")));
-// app.use ***********************************
+//***** app.use ***********************************
 
 
-// app.get ***********************************
+//***** app.get ***********************************
 app.get('/hello', function(req, res){
   var body = 'Hello World';
   res.setHeader('Content-Type', 'text/plain');
@@ -17,7 +17,7 @@ app.get('/hello', function(req, res){
 });
 
 app.get("/", routes.pages("index"));
-// app.get ***********************************
+//***** app.get ***********************************
 
 app.listen(1975);
 console.log('Listening on port 1975');
