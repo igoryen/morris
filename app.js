@@ -1,7 +1,11 @@
-var express = require('express');
 var app = express();
+var express = require('express');
+var path = require(‘path’);
 
-app.get('/hello.txt', function(req, res){
+app.use(express.static(path.join(__dirname + "/public")));
+
+
+app.get('/', function(req, res){
   var body = 'Hello World';
   res.setHeader('Content-Type', 'text/plain');
   res.setHeader('Content-Length', body.length);
