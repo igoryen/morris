@@ -1,6 +1,6 @@
-var app = express();
-var express = require('express');
-var path = require(‘path’);
+var express = require('express'),
+	  app = express();
+var path = require('path');
 
 app.use(express.static(path.join(__dirname + "/public")));
 
