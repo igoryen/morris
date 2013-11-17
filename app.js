@@ -1,14 +1,14 @@
-var express = require('express'),
+// app.js
+var express = require('express'), // 10
 	  app = express();
-var path = require('path');
-var routes  = require( "./routes" );
+var path = require('path'); // 20
+var nunjucks = require( "nunjucks" ); // 30
+nunjucks.configure('public', { // 31
+    autoescape: true, // 32 
+    express: app    // 33
+});
+var routes  = require( "./routes" ); // 40 
 
-//***** app.use ***********************************
-app.use(express.static(path.join(__dirname + "/public")));
-//***** app.use ***********************************
-
-
-//***** app.get ***********************************
 app.get('/hello', function(req, res){
   var body = 'Hello World';
   res.setHeader('Content-Type', 'text/plain');
@@ -17,7 +17,6 @@ app.get('/hello', function(req, res){
 });
 
 app.get("/", routes.pages("index"));
-//***** app.get ***********************************
 
 app.listen(1975);
 console.log('Listening on port 1975');
