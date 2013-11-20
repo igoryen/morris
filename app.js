@@ -39,6 +39,8 @@ app.configure( function (){
 
 
 app.get("/", routes.pages("index"));
+app.get("/about", routes.pages("about"));
+
 
 app.listen(1975);
 console.log('Listening on port 1975');

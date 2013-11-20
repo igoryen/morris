@@ -17,18 +17,21 @@
     {% endblock %}
   </head>
   <body>
+    <ul>
+      <li><a href="http://localhost:1975/">Home</a></li>
+      <li><a href="http://localhost:1975/about">About</a></li>
+    </ul>
 
-    {% block header %}
-    {% endblock %}
+    {% block header %}{% endblock %}
 
-            <h2><img <img src="../public/img/logo.jpg" alt="logo" width="60" height="60"> Harvesters International Bible Training Center</h2><hr>
+    <h2><img src="../public/img/logo.jpg" alt="logo" width="60" height="60"> Harvesters International Bible Training Center</h2><hr>
 
-    Made by 
-    {% block content %}
-      {{ author }}
-    {% endblock %}
+
+    {% block content %}{% endblock %}
 
     {% block footer %}{% endblock %}
+    <hr>
+    Made by igoryen in Node.js
 
   </body>
 </html>
