@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=en>
+
+  <head>
+    <meta http-equiv="content-type" content="text-html" charset="utf-8">
+
+    <title>
+      HIBTC - {% block title %}
+      {{ title }}
+      {% endblock %}
+    </title>
+
+    <style>
+    </style>
+    {% block css %}
+
+    {% endblock %}
+  </head>
+  <body>
+
+    {% block header %}
+    {% endblock %}
+
+            <h2><img <img src="../public/img/logo.jpg" alt="logo" width="60" height="60"> Harvesters International Bible Training Center</h2><hr>
+
+    Made by 
+    {% block content %}
+      {{ author }}
+    {% endblock %}
+
+    {% block footer %}{% endblock %}
+
+  </body>
+</html>
