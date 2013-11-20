@@ -1,0 +1,28 @@
+/*
+for the navigation menu in layout.html
+http://biostall.com/creating-a-navigation-menu-using-an-unordered-list-and-css*/
+#menu {   
+    list-style-type:none;  
+    margin:0;  
+    padding:0;  
+    height:30px;  
+    background-color:#600;  
+    font-family:Arial;  
+    font-size:0.9em;  
+}  
+#menu li {  
+    float:left;  
+    height:30px;  
+    line-height:30px;  
+}  
+#menu li a {  
+    display:block;  
+    padding:0 20px;  
+    color:#FFF;  
+    text-decoration:none;  
+}  
+#menu li a:hover {  
+    background-color:#900;  
+    text-decoration:none;  
+}  
+/**/

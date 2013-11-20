@@ -3,6 +3,8 @@
 
   <head>
     <meta http-equiv="content-type" content="text-html" charset="utf-8">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/main.css">
 
     <title>
       HIBTC - {% block title %}
@@ -17,21 +19,23 @@
     {% endblock %}
   </head>
   <body>
-    <ul>
-      <li><a href="http://localhost:1975/">Home</a></li>
-      <li><a href="http://localhost:1975/about">About</a></li>
-    </ul>
+    <div id="aa">
+    
 
-    {% block header %}{% endblock %}
+      {% block header %}{% endblock %}
 
-    <h2><img src="../public/img/logo.jpg" alt="logo" width="60" height="60"> Harvesters International Bible Training Center</h2><hr>
+      <h2><img src="../public/img/logo.jpg" alt="logo" width="60" height="60"> Harvesters International Bible Training Center</h2>
 
+      <ul id="menu">
+        <li><a href="http://localhost:1975/">Home</a></li>
+        <li><a href="http://localhost:1975/about">About</a></li>
+      </ul>
 
-    {% block content %}{% endblock %}
+      {% block content %}{% endblock %}
 
-    {% block footer %}{% endblock %}
-    <hr>
-    Made by igoryen in Node.js
-
+      {% block footer %}{% endblock %}
+      <hr>
+      Made by igoryen in Node.js
+    </div>
   </body>
 </html>
