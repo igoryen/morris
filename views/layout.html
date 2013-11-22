@@ -24,7 +24,7 @@
 
       {% block header %}{% endblock %}
 
-      <h2><img src="../public/img/logo.jpg" alt="logo" width="60" height="60"> Harvesters International Bible Training Center</h2>
+      <h2><a href="/about"><img src="../public/img/logo.jpg" alt="logo" width="60" height="60"></a> Harvesters International Bible Training Center</h2>
 
       <ul id="menu">
         <li><a href="/">Home</a></li>
@@ -33,6 +33,7 @@
       </ul>
 
       {% block content %}{% endblock %}
+      {% block news %}{% endblock %}
 
       {% block footer %}{% endblock %}
       <hr>
