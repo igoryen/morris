@@ -32,7 +32,18 @@ http://biostall.com/creating-a-navigation-menu-using-an-unordered-list-and-css*/
 	width: 1300px;
 	margin: auto; 
 }
-#tt{
+.t1{
 	vertical-align: top;
 	padding-right: 5px;
+}
+.tr1{
+	padding: 5px;
+	vertical-align: top;
+}
+.td1{
+	padding: 5px;
+}
+.td2{
+	text-align: center;
+	font-style: italic;
 }
